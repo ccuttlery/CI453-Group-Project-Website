@@ -1,0 +1,265 @@
+/*sections------------------------------------------------------------------- */
+body {
+    background-color: #F0F0F0;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #001524;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFF;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+main  {
+    max-width: 600px;
+}
+article	{
+}
+aside	{
+}
+footer {
+}
+header {
+}
+.post {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: #445D48;
+    border: 2px solid #445D48;
+    border-radius: 25px;
+}
+
+nav	{
+}
+
+
+/*headings------------------------------------------------------------------- */
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #445D48;
+    font-size: 36px;
+    line-height: 50px;
+}
+h2	{
+}
+h3 	{
+}
+/*grouping------------------------------------------------------------------- */
+p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+table {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+/*lists---------------------------------------------------------------------- */
+ul	{
+}
+li	{
+}
+ol	{
+}
+dl	{
+}
+dt	{
+}
+dd	{
+}
+/*text------------------------------------------------------------------------ */
+em	{
+}
+strong	{
+}
+small	{
+}
+cite	{
+}
+time	{
+}
+/*image----------------------------------------------------------------------- */
+figure	{
+}
+figcaption	{
+}
+
+img	{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*anchors--------------------------------------------------------------------- */
+a:link, a:visited, a:active	{
+	color: #0090D2;
+}
+
+a:hover {
+    color: #0063A6;
+    text-decoration: none;
+}
+
+
+.banner {
+    text-align: center;
+    background-color: #D6CC99;
+    border: 2px solid #D6CC99;
+}
+
+
+.menu li {
+    text-align: center;
+    list-style-type: none;
+    font-size: 18px;
+    color: #445D48;
+    margin-bottom: 20px;
+}
+#current {
+    padding: 5px;
+    margin-right: 4px;
+    text-decoration: none;
+    border: 2px solid #445D48;
+    background-color: #445D48;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.menu a {
+    padding: 5px;
+    margin-right: 4px;
+    text-decoration: none;
+    border: 2px solid #445D48;
+    border-radius: 3px;
+    color: #445D48;
+}
+.menu a:hover {
+    background-color: #445D48;
+    color: #FFF;
+}
+
+/* .contents {
+    display: grid;
+} */
+
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .menu li
+    {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+}
+
+
+
+
+.banner {grid-area: banner;}
+.menu {grid-area: menu;}
+nav {grid-area: nav;}
+.contents {grid-area: contents}
+table {grid-area: table;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+
+#wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+     "banner"
+     "menu"
+     "contents"
+     "main"
+     "aside"
+     "footer";
+}
+
+@media (min-width: 900px) {
+    #wrapper {
+      grid-template-columns: 3fr 6fr;
+      grid-template-areas: 
+        "banner  banner"
+        "menu  menu"
+        "contents  main"
+        "aside  aside"
+        "footer  footer";
+    }
+}
+
+@media (min-width: 1100px) {
+    #wrapper {
+      grid-template-columns: 3fr 5fr 3fr;
+      grid-template-areas: 
+        "banner  banner  banner"
+        "menu  main  contents"
+        "aside  aside  aside"
+        "footer  footer  footer";
+     }
+  }
+
+
+
+label {display: block;}
+
+input {
+    width: 98%;
+    height: 1.5em;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+input[type=submit] {
+    margin-top: 1em;
+    width: 30%;
+    background-color: white;
+    border-color: 445D48;
+}
+
+input[type=submit]:hover {
+    background-color: #445D48;
+    color: #FFF;
+}
+
+
+input[type=radio] {
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+form {
+    width: 30em;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    border: 6px solid #445D48;
+    border-radius: 25px;
+
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+textarea {
+    border-radius: 8px;
+    width: 98%;
+    max-width: 98%;
+    height: 3em;
+}
+
+#form1 legend {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+}
