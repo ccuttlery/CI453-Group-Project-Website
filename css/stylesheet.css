@@ -116,9 +116,8 @@ a:hover {
 .banner {
     text-align: center;
     background-color: #D6CC99;
-    border: 2px solid #D6CC99;
+    border: 2px solid #D6CC99;   
 }
-
 
 .menu li {
     text-align: center;
