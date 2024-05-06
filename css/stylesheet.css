@@ -108,7 +108,7 @@ img	{
 .popup-window {
     position: fixed;
     width: 300px;
-    height: 200px;
+    height: auto;
     background: white;
     border: 1px solid black;
     padding: 10px;
@@ -282,4 +282,45 @@ textarea {
 #form1 legend {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
+}
+
+/*Security Mechanism Anchors---------------------------------------------------- */
+.SM1 {
+    display: grid;
+    place-items: center;
+}
+
+.SM2 {
+    display: grid;
+    place-items: center;
+}
+
+.SM3 {
+    display: grid;
+    place-items: center;
+}
+
+.SM4 {
+    display: grid;
+    place-items: center;
+}
+
+.SM5 {
+    display: grid;
+    place-items: center;
+}
+
+.SM6 {
+    display: grid;
+    place-items: center;
+}
+
+.SM7 {
+    display: grid;
+    place-items: center;
+}
+
+.SM8 {
+    display: grid;
+    place-items: center;
 }
