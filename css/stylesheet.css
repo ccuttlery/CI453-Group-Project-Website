@@ -324,3 +324,20 @@ textarea {
     display: grid;
     place-items: center;
 }
+
+/*Privacy Issue Anchors------------------------------------------------------- */
+.PI1 {
+    display: grid;
+    place-items: center;
+}
+
+.PI2 {
+    display: grid;
+    place-items: center;
+}
+/*Appropriate Security Controls Anchors----------------------------------------- */
+.ASC1 {
+    display: grid;
+    place-items: center;
+}
+
