@@ -335,9 +335,21 @@ textarea {
     display: grid;
     place-items: center;
 }
+
 /*Appropriate Security Controls Anchors----------------------------------------- */
 .ASC1 {
     display: grid;
     place-items: center;
 }
 
+/*pgtop button------------------------------------------------------------------*/
+#pgtop {
+    position: fixed;
+    float: right;
+    background-color: #000000;
+    color: #FFFFFF;
+    right: 0px;
+    bottom: 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
